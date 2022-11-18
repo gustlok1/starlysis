@@ -3,12 +3,18 @@ body{
     display: flex;
     align-items: center;
 }
-
-.login{
+.c-vermelho{
+    color: #f81717;
+}
+.bold{
+    font-weight: 700;
+}
+/*cadastro######################################################################################################*/
+.background{
     background-color: white;
     margin: 0 auto;
-    height: 60vh;
-    width: 500px;
+    min-height: 500px;
+    min-width: 500px;
     background-image: url(../imgs/img-login2.png);
     background-size: 200px;
     background-repeat: no-repeat;
@@ -18,4 +24,15 @@ body{
 
 .ondinha1{
     height: 150px;
+}
+
+.cadastro{
+    height: inherit;
+    width: inherit;
+}
+.logo{    
+    display: flex;
+    height: 85px;
+    margin: 0 auto;
+    margin-top: -140px;
 }
