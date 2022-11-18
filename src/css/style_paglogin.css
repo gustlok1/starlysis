@@ -1,0 +1,21 @@
+body{
+    background: linear-gradient(174.7deg, #FFFAFA 13.29%, #EFEFEF 89.25%);
+    display: flex;
+    align-items: center;
+}
+
+.login{
+    background-color: white;
+    margin: 0 auto;
+    height: 60vh;
+    width: 500px;
+    background-image: url(../imgs/img-login2.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position: right bottom;
+}
+
+.ondinha1{
+    height: 150px;
+}
