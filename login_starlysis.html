@@ -18,20 +18,8 @@
                     <h1>Nome <span class="c-vermelho bold">*</span></h1>
                     <input class="input" type="text" name="nome" id="input-nome" required placeholder="Digite aqui...">
                     <span class="input__efeito"></span>
-                    <p class="texto1"></p>
-                </li>                
-                <li class="cadastro--input">
-                    <h1>E-mail <span class="c-vermelho bold">*</span></h1>
-                    <input class="input" type="text" name="email" id="input-email" required placeholder="Exemplo@gmail.com...">
-                    <span class="input__efeito"></span>
-                    <p class="texto2"></p>
                 </li>
-                <li class="cadastro--input">
-                    <h1>CPF (Opcional)</h1>
-                    <input class="input" type="text" name="cpf" id="input-cpf" placeholder="Digite aqui...">
-                    <span class="input__efeito"></span>
-                    <p class="cpf-error"></p>
-                </li>
+                
                 <li class="cadastro--input active1">
                     <h1>Senha <span class="c-vermelho bold">*</span></h1>
                     <input class="input" type="text" name="senha" id="input-senha" required placeholder="Digite aqui...">
@@ -44,13 +32,22 @@
                     <span class="input__efeito"></span>
                 </li>
 
+                <li class="cadastro--input">
+                    <h1>E-mail <span class="c-vermelho bold">*</span></h1>
+                    <input class="input" type="text" name="email" id="input-email" required placeholder="Exemplo@gmail.com...">
+                    <span class="input__efeito"></span>
+                </li>
+                <li class="cadastro--input">
+                    <h1>CPF (Opcional)</h1>
+                    <input class="input" type="text" name="cpf" id="input-cpf" placeholder="Digite aqui...">
+                    <span class="input__efeito"></span>
+                </li>
                 </form>
             </ul>
             <a href="./login_starlysis.html" class="cadastro--link">Já tem conta? Clique aqui para entrar</a>
-            <img src="./src/imgs/seta.png" alt="avancar" onclick="trocarInputs(1)">
+            <img src="./src/imgs/seta.png" alt="avancar" >
         </section>
     </section>
 </body>
 
-    <script src="./src/scripts/script_pagcadastro.js"></script>
 </html>
