@@ -27,27 +27,38 @@
                     <p class="texto2"></p>
                 </li>
                 <li class="cadastro--input">
-                    <h1>CPF (Opcional)</h1>
-                    <input class="input" type="text" name="cpf" id="input-cpf" placeholder="Digite aqui...">
-                    <span class="input__efeito"></span>
-                    <p class="cpf-error"></p>
-                </li>
-                <li class="cadastro--input active1">
                     <h1>Senha <span class="c-vermelho bold">*</span></h1>
-                    <input class="input" type="text" name="senha" id="input-senha" required placeholder="Digite aqui...">
+                    <input class="input" type="password" name="cpf" id="input-senha" placeholder="Digite aqui...">
                     <span class="input__efeito"></span>
+                    <p class="senha-error"></p>
                 </li>
-
-                <li class="cadastro--input active1">
+                <li class="cadastro--input">
                     <h1>Digite novamente <span class="c-vermelho bold">*</span></h1>
-                    <input class="input" type="text" name="senha2" id="input-senha2" required placeholder="Digite aqui...">
+                    <input class="input" type="password" name="senha2" id="input-senha2" required placeholder="Digite aqui...">
                     <span class="input__efeito"></span>
+                    <p class="senha-error2"></p>
                 </li>
-
+                <li class="cadastro--input cadastro--input__ativada">
+                    <h1>Tipo de conta <span class="c-vermelho bold">*</span></h1>
+                        <section class="cadastro--input--radios">
+                            <div class="cadastro--input--radio"><input type="radio" name="normal" id="normal" required ><label for="normal">Normal</label></div>
+                            <div class="cadastro--input--radio"><input type="radio" name="normal" id="premium" required ><label for="premium">Premium</label></div>
+                        </section>
+                        <section class="cadastro--input--opcoes">
+                            <div class="cadastro--input--opcao"><img src="./src/imgs/o.png" class="bolinha"><p> Funções básicas</p><img src="./src/imgs/o.png"  class="bolinha"></div>
+                            <div class="cadastro--input--opcao"><img src="./src/imgs/x.png" class="xizinho"><p> Funções avançadas</p><img src="./src/imgs/o.png"  class="bolinha"></div>
+                            <div class="cadastro--input--opcao"><img src="./src/imgs/x.png" class="xizinho"><p> Variações de gráficos</p><img src="./src/imgs/o.png"  class="bolinha"></div>
+                            <div class="cadastro--input--opcao"><img src="./src/imgs/x.png" class="xizinho"><p> Bases de dados grandes</p><img src="./src/imgs/o.png"  class="bolinha"></div>
+                        </section>
+                    <p class="senha-error2"></p>
+                </li>
+                    <input type="submit" value="Finalizar" id="finalizar">
                 </form>
             </ul>
             <a href="./login_starlysis.html" class="cadastro--link">Já tem conta? Clique aqui para entrar</a>
-            <img src="./src/imgs/seta.png" alt="avancar" onclick="trocarInputs(1)">
+            <a href="./suporte_starlysis.html" class="cadastro--link">Precisa de ajuda? Clique aqui para suporte</a>
+            <label for="finalizar" class="submit">Finalizar</label>
+            <img src="./src/imgs/seta.png" alt="avancar" onclick="trocarInputs(1)" class="avancar">
         </section>
     </section>
 </body>

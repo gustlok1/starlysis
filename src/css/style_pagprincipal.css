@@ -17,7 +17,10 @@
     font-weight: 700;
 }
 /*menu###################################################################*/
-
+.menu--bars{
+    height: 40px;
+    display: none;
+}
 .header{
     display: flex;
     padding: 5px;
@@ -161,7 +164,38 @@
     }
 }
 @media screen and (max-width:970px){
+
     .main--titulo br{
         display: block;
+    }
+    .menu--bars{
+        display: block;
+    }
+    .menu--section{
+        position: fixed;
+        width: 250px;
+        height: 100vh;
+        backdrop-filter:blur(4px) saturate(50%);
+        background-color: rgba(0, 0, 0, 0.356);
+        right: -300px;
+        top: 0;
+        padding: 20px;
+        transition: .5s;
+    }
+    .menu--section.active{
+        right: 0;
+    }
+    .header--sidebar{        
+        align-items: center;
+        flex-direction: column;
+    }
+    .header--sidebar li, p{
+        margin: 10px 0;
+    }
+    .header--user{
+        display: none;
+    }
+    .header a{
+        color: white;
     }
 }

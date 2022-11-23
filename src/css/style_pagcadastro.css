@@ -41,7 +41,7 @@ body{
     width: 100%;
 }
 .cadastro--input{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .cadastro--input p{
     margin-top: 5px;
@@ -49,7 +49,7 @@ body{
     font-size: 13px;
 }
 .cadastro input{
-    margin-top: 20px;
+    margin-top: 10px;
     width: 50%;
     border: none;
     border-bottom: 1px solid black;
@@ -84,12 +84,61 @@ body{
 img[alt="avancar"]{
     /* topo | direita | inferior | esquerda */
     cursor: pointer;
-    margin: 60px 0 0 auto;
+    margin: 30px 0 0 auto;
     display: flex;
     padding: 20px;
 }
-
-/*inputs2#############################################################################################################*/
-.active1{
+input[type="submit"]{
     display: none;
+}
+.finalizar{    
+    cursor: pointer;
+    margin: 30px 0 0 auto;
+    display: block;
+    padding: 20px;
+    border: none;
+    background:none;
+}
+/*inputs2#############################################################################################################*/
+.cadastro--input--radios{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 50%;
+    margin: 20px 0;
+}
+.cadastro--input--radio{
+    display: flex;
+    align-items: center;
+}
+.cadastro--input--radio input{
+    margin:0;
+}
+.cadastro--input--radio label{
+    margin-left: 10px;
+    font-size: 13px;
+    display: block;
+}
+.xizinho, .bolinha{
+    height: 10px;
+}
+.cadastro--input--opcoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.cadastro--input__ativada{
+    color: black;
+    display: none;
+}
+.cadastro--input--opcao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+.cadastro--input--opcao p{    
+    color: black;
 }

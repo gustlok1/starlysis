@@ -1,50 +1,67 @@
 function trocarInputs(numeroTela){
     inputs = document.querySelectorAll('.input')
     verificador1 = false
-    verificador2 = true
 
     switch(numeroTela){
         case 1: 
-                    if(!(inputs[0].value) || !(inputs[1].value)){
-                        msgErro = "Preencha todos os campos";
-                        if(!(inputs[0].value)){
-                            document.querySelector('.texto1').innerHTML = msgErro
-                        }
-                        else{
-                            document.querySelector('.texto1').innerHTML = ''
-                        }
-                        if(!(inputs[0].value)){
-                            document.querySelector('.texto2').innerHTML = msgErro
-                        }   
-                        else{
-                            document.querySelector('.texto1').innerHTML = ''
-                        }
+
+            if(!(inputs[0].value) || !(inputs[1].value) || !(inputs[2].value) || !(inputs[3].value) || inputs[2].value != inputs[3].value){
+                msgErro = "Preencha todos os campos";
+                if(!(inputs[0].value)){
+                    document.querySelector('.texto1').innerHTML = msgErro
+                    break
+                }
+                else{
+                    document.querySelector('.texto1').innerHTML = ''
+                }
+                if(!(inputs[1].value)){
+                    document.querySelector('.texto2').innerHTML = msgErro
+                    break
+                }   
+                else{
+                    document.querySelector('.texto2').innerHTML = ''
+                }
+                
+                if(!(inputs[2].value) || !(inputs[3].value) || inputs[2].value != inputs[3].value){
+                    if(!(inputs[2].value)){
+                        document.querySelector('.senha-error').innerHTML = msgErro
+                        break
+                    }   
+                    else{
+                        document.querySelector('.senha-error').innerHTML = ''
+                    }
+                    if(!(inputs[3].value)){
+                        document.querySelector('.senha-error2').innerHTML = msgErro
+                        break
+                    }   
+                    else{
+                        document.querySelector('.senha-error2').innerHTML = ''
+                    }
+                    if(inputs[2].value != inputs[3].value){
+                        document.querySelector('.senha-error').innerHTML = "As senhas são diferentes"
+                        document.querySelector('.senha-error2').innerHTML = "As senhas são diferentes"
                     }
                     else{
-                        verificador1 = true
+                        document.querySelector('.senha-error').innerHTML = ""
+                        document.querySelector('.senha-error2').innerHTML = ""
                     }
-                    if(inputs[2].value){
-                        cpf = inputs[2].value
-                        regxNumero = /[0-9]/gi
-                        for(i=0;i<cpf.length;i++){
-                            if(cpf[i].search(regxNumero)){
-                                document.querySelector('.cpf-error').innerHTML = 'Insira apenas numeros'
-                                verificador2 = false
-                                break
-                            }
-                            else{
-                                document.querySelector('.cpf-error').innerHTML = ''
-                            }
-                            }
-                        }
+                }   
+                
+            }
+            else{
+                img = document.querySelector('.ondinha1')
+                img.src = './src/imgs/voltar.png'
+                img.onclick = trocarInputs(2)
+                document.querySelector('.avancar').style.display = "none"
 
-                    
-                    if(verificador1 && verificador2){
-                        blocos = document.querySelectorAll('.cadastro--input')
-                        for(i=0;i<3;i++){
-                            blocos[1].style.display='none'                            
-                        }
-                    }
+                //img.classList = "teste"
+                blocos = document.querySelectorAll('.cadastro--input')
+                for(i=0;i<4;i++){
+                    blocos[i].style.display='none'                            
+                }
+                document.querySelector('.cadastro--input__ativada').style.display = "flex"
+                
+            }
         break
     }
 }
