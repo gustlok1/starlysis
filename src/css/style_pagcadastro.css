@@ -25,7 +25,9 @@ body{
 .ondinha1{
     height: 150px;
 }
-
+.ondinha1.voltar{
+    cursor: pointer;
+}
 .logo{    
     display: flex;
     height: 85px;
@@ -81,7 +83,7 @@ body{
     text-decoration: underline;
     color: #2392DD;
 }
-img[alt="avancar"]{
+.cadastro--submit{
     /* topo | direita | inferior | esquerda */
     cursor: pointer;
     margin: 30px 0 0 auto;
@@ -137,7 +139,9 @@ input[type="submit"]{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: 30px;
+}
+.cadastro--input--opcao:nth-last-child(n+1){
+    margin-bottom: 30px;
 }
 .cadastro--input--opcao p{    
     color: black;

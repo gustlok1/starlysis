@@ -21,6 +21,9 @@
     height: 40px;
     display: none;
 }
+.menu--bars.close{
+    height: 25px;
+}
 .header{
     display: flex;
     padding: 5px;
@@ -164,16 +167,30 @@
     }
 }
 @media screen and (max-width:970px){
-
+    .main, .menu{
+        width: 100%;
+    }
+    .menu{
+        position: relative;
+    }
     .main--titulo br{
         display: block;
+    }
+    .main--titulo, .main--textos{
+        margin: 0 auto;
+        width: 100%;
+        padding: 20px;
+    }
+    .main--titulo{
+        font-size: 30px;
+        line-height: 50px;
     }
     .menu--bars{
         display: block;
     }
     .menu--section{
         position: fixed;
-        width: 250px;
+        width: 200px;
         height: 100vh;
         backdrop-filter:blur(4px) saturate(50%);
         background-color: rgba(0, 0, 0, 0.356);
@@ -197,5 +214,25 @@
     }
     .header a{
         color: white;
+    }
+    .header--sidebar a{
+        font-size: 20px;
+    }
+    .header--sidebar li:nth-child(n+1)::before{
+        content: '';
+        height: 2px;
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+        background-color: white;
+    }
+}
+
+@media screen and (max-width:600px){
+    .header--logo{
+        height: 50px;
+    }
+    .menu--bars{
+        height: 35px;
     }
 }
