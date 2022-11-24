@@ -5,7 +5,7 @@ function trocarInputs(numeroTela){
     switch(numeroTela){
         case 1: 
 
-            if(!(inputs[0].value) && !(inputs[1].value) && !(inputs[2].value) && !(inputs[3].value) && inputs[2].value != inputs[3].value){
+            if(!(inputs[0].value) || !(inputs[1].value) || !(inputs[2].value) || !(inputs[3].value) || inputs[2].value != inputs[3].value){
                 msgErro = "Preencha todos os campos";
                 if(!(inputs[0].value)){
                     document.querySelector('.texto1').innerHTML = msgErro
@@ -22,7 +22,7 @@ function trocarInputs(numeroTela){
                     document.querySelector('.texto2').innerHTML = ''
                 }
                 
-                if(!(inputs[2].value) && !(inputs[3].value) && inputs[2].value != inputs[3].value){
+                if(!(inputs[2].value) || !(inputs[3].value) || inputs[2].value != inputs[3].value){
                     if(!(inputs[2].value)){
                         document.querySelector('.senha-error').innerHTML = msgErro
                         break

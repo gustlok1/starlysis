@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if(isset($_SESSION["usuario"])){
+        $nome = $_SESSION['nome'];
+        $usuario = $_SESSION['usuario'];
+?>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -15,12 +21,23 @@
             <section class="menu--section">
                 <ul class="header--sidebar">
                     <img src="./src/imgs/close.png" alt="menu" class="menu--bars close" onclick="sideBar()">
-                    <li><a href="#">Análise</a></li>
+                    <li class="header--azul"><a href="#" <?php echo "style=display:flex;";?>>Análise</a></li>
                     <li><a href="#">Ajuda</a></li>
                     <li><a href="#">Sobre</a></li>
-                    <p class="header--cadastrar"><a href="./cadastro_starlysis.html">Cadastre-se</a></p>
-                    <li><a href="./login_starlysis.html">Entrar</a></li>
-                    <li><a href="./login_starlysis.html"><img src="./src/imgs/user.png" alt="usuario" class="header--user"></a></li>
+                    <p class="header--azul" <?php echo "style=display:none;";?> ><a href="./cadastro_starlysis.php">Cadastre-se</a></p>
+                    <li <?php echo 'onclick="toggleMenu()"'.'>'.$nome;?><a class="header--login" href="./login_starlysis.html"><?php }else{echo "Entrar";}?></a></li>
+                    <li><a class="header--login" href="./login_starlysis.html" onclick="toggleMenu()"><img src="./src/imgs/user.png" alt="usuario" class="header--user"></a></li>
+                    <div class="header--div_login">
+                        <div class="header--div--login">
+                            <div class="header--div_seta"></div>
+                            <form action="sair_sessao.php" method="post" style="display:none;"><input value="sair"type="text" name="sair"><input type="submit" value="enviar" id="submit"></form>
+                            <div class="header--div_links">
+                                <p>Deseja sair?</p>
+                                <label for="submit" style="cursor:pointer;"><p>Sim</p></label>
+                                <p style="cursor:pointer;" onclick="toggleMenu()">Não</p>
+                            </div>
+                        </div>
+                    </div>
                 </ul>
 
             </section>
@@ -35,7 +52,7 @@
                 Molestias iure saepe ipsum deleniti accusantium nam, libero vero odio pariatur officiis excepturi dignissimos.
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias ea non officia quod doloremque dolores quisquam, eius rerum obcaecati magni saepe ratione itaque, a facere ab modi odio incidunt quos.
             </p>
-            <a href="./cadastro_starlysis.html"><button class="main--botao">Começar Agora!</button></a>
+            <a href="./cadastro_starlysis.php"><button class="main--botao">Começar Agora!</button></a>
         </section>
     </main>
 
@@ -44,5 +61,6 @@
         <section></section>
     </main>
 </body>
+
 <script src="./src/scripts/script_pagprincipal.js"></script>
 </html>

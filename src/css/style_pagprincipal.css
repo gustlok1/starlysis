@@ -49,14 +49,14 @@
     transition: .3s;
     font-size: 17px;
 }
-.header--cadastrar{
+.header--azul{
     border-radius: 20px;
     padding: 5px 6px;
     background-color:#2392DD;
     transition: .3s;
 }
 
-.header--cadastrar a {
+.header--azul a {
     color: white;
 }
 
@@ -64,17 +64,68 @@
     font-size: 20px;
 }
 
-.header--cadastrar:hover > a{
+.header--azul:hover > a{
     color: black;
 }
-.header--cadastrar:hover{
+.header--azul:hover{
     font-size: 17px;
     background-color:white;
     padding: 7px 12px;
     box-shadow: 0px 0px 8px 2px #2392DD;
     cursor: pointer;
 }
+.header--div--login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+.header--div_seta{
+    height: 30px;
+    width: 30px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.253);
+    background-color: white;
+    z-index: 1;
+    transform: rotate(45deg);
+    display: block;
+    position: absolute;
+    top: -10px;
+}
+.header--div_login{
+    display: block;
+    position: absolute;
+    top: 90px;
+    right: 100px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.253);
+    background-color: white;
+    width: 15%;
+    height: 90px;
+    opacity: 0;
+    transition: .2s;
+}
+.header--div_login.active{
+    top: 70px;
+    opacity: 1;
+}
+.header--div_links{
+    height: inherit;
+    width: inherit;
+    padding: 10px;
+    z-index: 2;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.header--div_links p{
+    padding: 2px;
+    transition: .4s;
+    margin: 0;
+}
+.header--div_links p:nth-child(n+1):hover{
+    color: #2392DD;
+}
 /*conteudo###############################################################*/
 
 .main{

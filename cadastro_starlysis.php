@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if($_SESSION["email"]){
+        #session_destroy();
+        header('Location:index.php');
+    }
+?>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -5,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/formatacao.css">
     <link rel="stylesheet" href="./src/css/style_pagcadastro.css">
-    <title>Document</title>
+    <title>Cadastro - STARLYSIS</title>
 </head>
 <body>
     <section class="background">                    
@@ -28,7 +35,7 @@
                 </li>
                 <li class="cadastro--input">
                     <h1>Senha <span class="c-vermelho bold">*</span></h1>
-                    <input class="input" type="password" name="cpf" id="input-senha" placeholder="Digite aqui...">
+                    <input class="input" type="password" name="senha1" id="input-senha" placeholder="Digite aqui...">
                     <span class="input__efeito"></span>
                     <p class="senha-error"></p>
                 </li>
@@ -41,8 +48,8 @@
                 <li class="cadastro--input cadastro--input__ativada">
                     <h1>Tipo de conta <span class="c-vermelho bold">*</span></h1>
                         <section class="cadastro--input--radios">
-                            <div class="cadastro--input--radio"><input type="radio" name="normal" id="normal" required ><label for="normal">Normal</label></div>
-                            <div class="cadastro--input--radio"><input type="radio" name="normal" id="premium" required ><label for="premium">Premium</label></div>
+                            <div class="cadastro--input--radio"><input type="radio" name="tipo" value="0" required ><label for="normal">Normal</label></div>
+                            <div class="cadastro--input--radio"><input type="radio" name="tipo" value="1" required ><label for="premium">Premium</label></div>
                         </section>
                         <section class="cadastro--input--opcoes">
                             <div class="cadastro--input--opcao"><img src="./src/imgs/o.png" class="bolinha"><p> Funções básicas</p><img src="./src/imgs/o.png"  class="bolinha"></div>
@@ -55,9 +62,10 @@
                     <input type="submit" value="Finalizar" id="finalizar">
                 </form>
             </ul>
-            <a href="./login_starlysis.html" class="cadastro--link">Já tem conta? Clique aqui para entrar</a>
+            <a href="./login_starlysis.php" class="cadastro--link">Já tem conta? Clique aqui para entrar</a>
             <a href="./suporte_starlysis.html" class="cadastro--link">Precisa de ajuda? Clique aqui para suporte</a>
-            <label for="" class="submit cadastro--submit"><img src="./src/imgs/seta.png" alt="avancar" onclick="trocarInputs(1)" class="avancar"></label>
+            
+            <label for="" class="submit cadastro--submit"><img src="./src/imgs/seta.png" alt="voltar" onclick="trocarInputs(1)" class="avancar"></label>
             
         </section>
     </section>

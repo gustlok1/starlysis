@@ -83,7 +83,7 @@ body{
     text-decoration: underline;
     color: #2392DD;
 }
-.cadastro--submit{
+.cadastro--submit, img[alt="avancar"]{
     /* topo | direita | inferior | esquerda */
     cursor: pointer;
     margin: 30px 0 0 auto;
