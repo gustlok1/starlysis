@@ -20,7 +20,7 @@
             <h1>ANÁLISE DE DADOS</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
         </section>
-        <img src="./src/imgs/grapich2.png" alt="gráfico" class="main1--grafico">
+        <img src="./src/imgs/graphics.png" alt="gráfico" class="main1--grafico">
     </main>
 
     <main class="main1 m2">
