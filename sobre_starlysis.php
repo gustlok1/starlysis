@@ -17,8 +17,8 @@
     ?>
     <main class="main1">
         <section class="main1--textos">
-            <h1>ANÁLISE DE DADOS</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <h1>ANÁLISE DE <br> DADOS</h1>
+            <p>A análise de dados.</p>
         </section>
         <img src="./src/imgs/graphics.png" alt="gráfico" class="main1--grafico">
     </main>

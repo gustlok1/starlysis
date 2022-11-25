@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style_pagprincipal.css">
     <link rel="stylesheet" href="src/css/formatacao.css">
-    <title>STARLYSIS - Página Principal</title>
+    <title>Página Principal - STARLYSIS</title>
 </head>
 <body>
     <?php

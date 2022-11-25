@@ -24,19 +24,19 @@
                 
                 <li class="cadastro--input">
                     <h1>Email <span class="c-vermelho bold">*</span></h1>
-                    <input class="input" type="text" name="email" id="input-email" required placeholder="Digite aqui...">
+                    <input class="input" type="text" name="email" id="input-email" required placeholder="Exemplo@gmail.com...">
                     <span class="input__efeito"></span>
                 </li>
                 <li class="cadastro--input">
                     <h1>Senha <span class="c-vermelho bold">*</span></h1>
-                    <input class="input" type="password" name="senha" id="input-senha" required placeholder="Exemplo@gmail.com...">
+                    <input class="input" type="password" name="senha" id="input-senha" required placeholder="Digite sua senha...">
                     <span class="input__efeito"></span>
                 </li>
                 <input type="submit" value="enviar" style="display:none;" id="enviar">
                 </form>
             </ul>
 
-            <a href="./login_starlysis.html" class="cadastro--link">Já tem conta? Clique aqui para entrar</a>
+            <a href="./cadastro_starlysis.html" class="cadastro--link">Não tem conta? Clique aqui para se cadastrar</a>
             <a href="./suporte_starlysis.html" class="cadastro--link">Precisa de ajuda? Clique aqui para suporte</a>
             <div id="cadastro--submit"><label for="enviar"><img src="./src/imgs/finalizar.png" alt="avancar"></label></div>
             
