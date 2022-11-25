@@ -7,14 +7,14 @@
 
         $cabecalho = '<section class="menu">
         <header class="header center">
-            <a href="index.html"><img src="./src/imgs/logo.png" alt="logo - starlysis" class="header--logo"></a>
+            <a href="index.php"><img src="./src/imgs/logo.png" alt="logo - starlysis" class="header--logo"></a>
             <img src="./src/imgs/bars.svg" alt="menu" class="menu--bars open" onclick="sideBar()">
             <section class="menu--section">
                 <ul class="header--sidebar">
                     <img src="./src/imgs/close.png" alt="menu" class="menu--bars close" onclick="sideBar()">
 
                     <!--analise/session-->
-                    <li class="header--azul"><a href="#" >Análise</a></li>
+                    <li class="header--azul"><a href="./analise_starlysis.php" >Análise</a></li>
                     <li><a href="./suporte_starlysis.php">Ajuda</a></li>
                     <li><a href="./sobre_starlysis.php">Sobre</a></li>
                     <li onclick="toggleMenu()"><u class="header--sidebar--nomeuser">'.$nome.'</u></li>
@@ -40,7 +40,7 @@
     } else {
         $cabecalho = '<section class="menu">
         <header class="header center">
-            <a href="index.html"><img src="./src/imgs/logo.png" alt="logo - starlysis" class="header--logo"></a>
+            <a href="index.php"><img src="./src/imgs/logo.png" alt="logo - starlysis" class="header--logo"></a>
             <img src="./src/imgs/bars.svg" alt="menu" class="menu--bars open" onclick="sideBar()">
             <section class="menu--section">
                 <ul class="header--sidebar">

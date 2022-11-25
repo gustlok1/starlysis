@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./src/css/formatacao.css">
     <link rel="stylesheet" href="./src/css/style_pagcadastro.css">
     <link rel="stylesheet" href="./src/css/style_paglogin.css">
-    <title>Document</title>
+    <title>STARLYSIS - Login</title>
 </head>
 <body>
     <section class="background">                    
