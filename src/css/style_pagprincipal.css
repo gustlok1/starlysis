@@ -5,11 +5,11 @@
     width: 80%;
     margin: 0 auto;
 }
-
+/*
 .menu{
     position: absolute;
 }
-
+*/
 .c-laranja{
     color: #f87817;
 }
@@ -59,9 +59,11 @@
 .header--azul a {
     color: white;
 }
-
-.header--sidebar li a:hover{
-    font-size: 20px;
+.header--sidebar--nomeuser{
+    transition: .3s;
+}
+.header--sidebar li a:hover,.header--sidebar--nomeuser:hover{
+    font-size: 19px;
 }
 
 .header--azul:hover > a{
@@ -147,7 +149,7 @@
     justify-content: space-around;
 
 }
-.main--titulo{
+.main--titulo, .main1--textos h1{
     font-size: 50px;
     width: 50%;
     line-height: 80px;
@@ -166,7 +168,7 @@
 }
 */
 
-.main--texto{
+.main--texto, .main1--textos p{
     font-size: 20px;
     width: 50%;
     text-align: justify;
@@ -263,7 +265,7 @@
     .header--user{
         display: none;
     }
-    .header a{
+    .header a, .header--sidebar--nomeuser{
         color: white;
     }
     .header--sidebar a{

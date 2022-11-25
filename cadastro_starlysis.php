@@ -1,7 +1,6 @@
 <?php
     session_start();
-    if($_SESSION["email"]){
-        #session_destroy();
+    if(isset($_SESSION["email"])){
         header('Location:index.php');
     }
 ?>

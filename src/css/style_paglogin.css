@@ -1,0 +1,15 @@
+.cadastro--input{
+    margin-top:40px;
+}
+.cadastro--input input{
+    margin-top:30px;
+}
+#cadastro--submit{
+    width: 100%;
+    display: block;
+    text-align: right;
+}
+label > img[alt="avancar"]{
+    margin-top: 80px;
+    margin-left: auto;
+}
