@@ -168,7 +168,7 @@
 }
 */
 
-.main--texto, .main1--textos p{
+.main--texto, .main1--textos p, .main2--textos p{
     font-size: 20px;
     width: 50%;
     text-align: justify;
