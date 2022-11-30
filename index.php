@@ -1,5 +1,6 @@
 <?php
-    require("header.php")
+    require("header.php");
+    require("footer.php");
 ?>
 <html lang="pt-br">
 <head>
@@ -29,42 +30,14 @@
         </section>
     </main>
 
-    <main class="main2">
+    <main class="main main2">
         <img src="" alt="">
         <section></section>
     </main>
 
-    <footer class="footer">
-        <ul class="footer--ul">
-            <li class="footer--itens img"><a href="./index.php"><img src="./src/imgs/logo.png" alt="logo"></a></li>
-            <li class="footer--itens index"><ul class="footer--itens--index">
-                <li class="footer--itens--index--titulo"><a href="./index.php">Página Principal</a></li>
-                <li><a href="./index.php#analise">Analise</a></li>
-                <li><a href="./index.php#gerador">Gerador</a></li>
-                <li><a href="./index.php#analise">Analise</a></li>
-            </ul></li>
-
-            <li class="footer--itens sobre"><ul class="footer--itens--sobre">
-                <li class="footer--itens--sobre--titulo"><a href="./sobre_starlysis.php">Sobre nós</a></li>
-                <li><a href="./sobre_starlysis.php#analise">Analise</a></li>
-                <li><a href="./sobre_starlysis.php#quem-somos">Quem somos?</a></li>
-                <li><a href="./sobre_starlysis.php#nossa-historia">Nossa história</a></li>
-            </ul>
-            </li>
-
-            <li class="footer--itens suporte"><ul class="footer--itens--suporte">
-                <li class="footer--itens--suporte--titulo"><a href="./suporte_starlysis.php">Suporte</a></li>
-                <li><a href="./suporte_starlysis.php#">Mandar email</a></li>
-            </ul>
-            </li>
-            <li class="footer--itens redes"><ul class="footer--itens--redes">
-                <li><a href="https://twitter.com"><img src="./src/imgs/devicon-master/devicon-master/icons/twitter/twitter-original.html" alt="twitter"></a></li>
-                <li><a href="./sobre_starlysis.php#quem-somos">Quem somos?</a></li>
-                <li><a href="./sobre_starlysis.php#nossa-historia">Nossa história</a></li>
-            </ul>
-        </li>
-        </ul>
-    </footer>
+    <?php
+        echo $footer;
+    ?>
 </body>
 
 <script src="./src/scripts/script_pagprincipal.js"></script>

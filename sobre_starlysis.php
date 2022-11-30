@@ -1,5 +1,6 @@
 <?php
-    require('header.php');
+    require("header.php");
+    require("footer.php");
 ?>
 <html lang="pt-br">
 <head>
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="src/css/style_pagprincipal.css">
     <link rel="stylesheet" href="src/css/style_pagsobre.css">
     <link rel="stylesheet" href="src/css/formatacao.css">
+    <link rel="stylesheet" href="src/css/footer.css">
     <title>STARLYSIS - Página Sobre Nós</title>
 </head>
 <body>
@@ -37,6 +39,11 @@
             <p>Nós somos uma empresa que visa o processo de compreensão dos dados, facilitando a mesma através da automatização de um processo pode acabar sendo muito complicado para pessoas que não tem conhecimento em programação, possibilitando uma agilidade maior e reduzindo o tempo gasto no processo, que poderá ser utilizado para tomada de decisões mais inteligentes.</p>
         </section>
     </main>
+
+    
+    <?php
+        echo $footer;
+    ?>
 </body>
     <script src="./src/scripts/script_pagprincipal.js"></script>
 </html>

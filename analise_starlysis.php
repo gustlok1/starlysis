@@ -1,6 +1,6 @@
 <?php
-    if(!(isset($_SESSION['email']))){
-        header('Location:index.php');
+    if(isset($_SESSION['email'])){
+        header('Location:login_starlysis.php');
 
     }
     require("header.php")
