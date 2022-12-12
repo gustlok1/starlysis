@@ -33,6 +33,7 @@
                 $_SESSION['email'] = $email;
                 $_SESSION['senha'] = $senha;
                 $_SESSION['nome'] = $nome;
+                $_SESSION['tipo'] = $tipoConta;
 
                 $sql_query2 = $banco->sqlquery($sqlselect,"cadastro_starlysis.html");
                 $dados = mysqli_fetch_array($sql_query2);

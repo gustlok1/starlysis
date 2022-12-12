@@ -94,7 +94,7 @@
     top: -10px;
 }
 .header--div_login{
-    display: block;
+    display: none;
     position: absolute;
     top: 90px;
     right: 100px;
@@ -235,8 +235,8 @@
         padding: 20px;
     }
     .main--titulo{
-        font-size: 30px;
-        line-height: 50px;
+        font-size: 60px;
+        line-height: 80px;
     }
     .menu--bars{
         display: block;
@@ -287,5 +287,15 @@
     }
     .menu--bars{
         height: 35px;
+    }
+    .main--titulo{
+        font-size: 40px;
+        line-height: 60px;
+    }
+}
+@media screen and (max-width:390px){
+    .main--titulo{
+        font-size: 30px;
+        line-height: 40px;
     }
 }

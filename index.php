@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="src/css/style_pagprincipal.css">
     <link rel="stylesheet" href="src/css/formatacao.css">
     <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="icon" href="src/imgs/isotipo.png">
     <title>Página Principal - STARLYSIS</title>
 </head>
 <body>

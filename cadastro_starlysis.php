@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/formatacao.css">
     <link rel="stylesheet" href="./src/css/style_pagcadastro.css">
+    <link rel="icon" href="src/imgs/isotipo.png">
     <title>Cadastro - STARLYSIS</title>
 </head>
 <body>

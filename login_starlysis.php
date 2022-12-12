@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./src/css/formatacao.css">
     <link rel="stylesheet" href="./src/css/style_pagcadastro.css">
     <link rel="stylesheet" href="./src/css/style_paglogin.css">
+    <link rel="icon" href="src/imgs/isotipo.png">
     <title>STARLYSIS - Login</title>
 </head>
 <body>
@@ -36,8 +37,8 @@
                 </form>
             </ul>
 
-            <a href="./cadastro_starlysis.html" class="cadastro--link">Não tem conta? Clique aqui para se cadastrar</a>
-            <a href="./suporte_starlysis.html" class="cadastro--link">Precisa de ajuda? Clique aqui para suporte</a>
+            <a href="./cadastro_starlysis.php" class="cadastro--link">Não tem conta? Clique aqui para se cadastrar</a>
+            <a href="./suporte_starlysis.php" class="cadastro--link">Precisa de ajuda? Clique aqui para suporte</a>
             <div id="cadastro--submit"><label for="enviar"><img src="./src/imgs/finalizar.png" alt="avancar"></label></div>
             
         </section>

@@ -3,7 +3,10 @@
     if(isset($_SESSION["usuario"])){
         $nome = $_SESSION['nome'];
         $usuario = $_SESSION['usuario'];
-
+        $user = "user";
+        if($_SESSION["tipo"] == 1){
+            $user = "user-premium";
+        }
 
         $cabecalho = '<section class="menu">
         <header class="header center">
@@ -18,7 +21,7 @@
                     <li><a href="./suporte_starlysis.php">Ajuda</a></li>
                     <li><a href="./sobre_starlysis.php">Sobre</a></li>
                     <li onclick="toggleMenu()"><u class="header--sidebar--nomeuser">'.$nome.'</u></li>
-                    <li><a class="header--login" href="./login_starlysis.html" onclick="toggleMenu()"><img src="./src/imgs/user.png" alt="usuario" class="header--user"></a></li>
+                    <li><a class="header--login" href="./login_starlysis.php" onclick="toggleMenu()"><img src="./src/imgs/'.$user.'.png" alt="usuario" class="header--user"></a></li>
 
                     <!--pop-up-->
                     <div class="header--div_login">

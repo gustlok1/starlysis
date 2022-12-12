@@ -26,6 +26,7 @@
             $_SESSION['senha']= $senha;
             $_SESSION['usuario']= $dados['id_usuario'];
             $_SESSION['nome']= $dados['nome_usuario'];
+            $_SESSION['tipo']= $dados['tipo_conta'];
             header('Location:index.php');      
             }
             else{
