@@ -5,8 +5,18 @@
 
     if(!(isset($_SESSION['email']))){
         header('Location:login_starlysis.php');
+    }
 
-    }    
+    if(isset($_POST['valor'])){
+        $banco = new BancodeDados();
+        $banco->conecta();
+        $id = base64_decode($_GET['id']);
+        $sqldelete =  "delete from projetos where id_projeto=".$id.";";
+        $banco->sqlstring($sqldelete,"delete");                
+        $banco->fechar();
+        header('Location:analise_starlysis.php');
+        echo "enviado";
+    }
 ?>
 <html lang="pt-br">
 <head>
@@ -71,18 +81,13 @@
 
     <main class="main">    
         <?php
+            // verifica 
             $banco = new BancodeDados();
             $banco->conecta();
-            // verifica 
 
-	    	if(isset($_GET['id']) && is_numeric(base64_decode($_GET['id']))){
-                $id = base64_decode($_GET['id']);
-            } else {
-                header('Location: index.php');
-            }
+            $id = base64_decode($_GET['id']);
 
             $id_usuario = $_SESSION['usuario'];
-
             // select
             $sqlconsulta =  "SELECT * FROM projetos WHERE id_projeto = '$id' AND id_usuario='$id_usuario'";
 
@@ -104,7 +109,15 @@
                         <div class="main--arquivo--nome_arquivo">'.$dados['nome_arquivo'].'</div>
                     </section>
                 </a>
-        
+                
+
+                <form class="forms--excluir" action="./projeto.php?id=?'.$_GET['id'].'" method="post">
+                    <p class="vermelho">Excluir projeto</p>
+                    <input type="text" name="valor" id="true" value="e">
+                    <input type="submit" id="submit" value="X">
+                </form>
+
+                
                 <section class="main--informacoes">
                     <div class="main--informacoes--descricao"><p><span class="bold">Descrição: </span>'.$dados['descricao'].'</p></div>
                     <div class="main--informacoes--data"><p><span class="bold">Data: </span>'.$dados['data_upload'].'</p></div>
@@ -127,8 +140,6 @@
             }
             
         ?>
-
-
     </main>
     <?php
         echo $footer;
@@ -136,5 +147,4 @@
 </body>
     <script src="./src/scripts/script_pagprincipal.js"></script>
     <script src="./src/scripts/script_paganalise.js"></script>
-
 </html>

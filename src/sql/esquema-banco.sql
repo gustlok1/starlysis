@@ -11,9 +11,7 @@ senha VARCHAR (8),
 cpf VARCHAR (11),
 nota_compra VARCHAR(10),
 tipo_conta INT
-);
-
- 
+); 
 
 CREATE TABLE projetos (
 id_projeto INT PRIMARY KEY AUTO_INCREMENT,
@@ -21,8 +19,10 @@ id_usuario INT,
 titulo VARCHAR (50),
 descricao VARCHAR (200),
 nome_arquivo VARCHAR (20),
+data_upload DATETIME DEFAULT CURRENT_TIMESTAMP,
 CONSTRAINT fk_id_usuario FOREIGN KEY (id_usuario) REFERENCES usuarios (id_usuario)
 );
+
 CREATE TABLE imagens (
 id_imagem INT PRIMARY KEY AUTO_INCREMENT,
 id_projeto INT,

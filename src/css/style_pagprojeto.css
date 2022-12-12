@@ -1,3 +1,28 @@
+.vermelho{
+    cursor: pointer;
+    color: rgb(209, 44, 44);
+}
+#submit{
+    padding: 2px 10px;
+    color: rgb(209, 44, 44);
+    cursor: pointer;
+    background: none;
+    margin-left: 20px;
+}
+.forms--excluir{
+    display: flex;
+}
+.forms--excluir:hover{
+    cursor: pointer;
+}
+.forms--excluir:hover > .vermelho{
+    text-decoration: underline;
+}
+input[name="valor"]{
+    position: absolute;
+    top:-123543px;
+}
+
 .main, .main--arquivo, .main--arquivo--logo, .main--arquivo--nome_arquivo{
     display: flex;
     flex-direction: column;
